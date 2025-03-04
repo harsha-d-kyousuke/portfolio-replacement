@@ -1,0 +1,229 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adithiyaa JP | Arch Linux Enthusiast & Software Developer</title>
+    <style>
+        body {
+            font-family: 'Fira Code', monospace;
+            margin: 0;
+            padding: 0;
+            background-color: #282c34;
+            color: #abb2bf;
+        }
+        header {
+            background: #1e2127;
+            color: white;
+            padding: 15px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 1.6em;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+        }
+        nav ul li {
+            margin-left: 20px;
+        }
+        nav ul li a {
+            color: #61afef;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .hero {
+            background: #21252b;
+            padding: 50px 20px;
+            text-align: center;
+        }
+        .hero h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            color: #56b6c2;
+        }
+        .hero p {
+            font-size: 1.2em;
+            color: #98c379;
+        }
+        .section {
+            padding: 40px 20px;
+        }
+        .section h2 {
+            border-bottom: 2px solid #5c6370;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+            color: #d19a66;
+        }
+        .skills, .projects {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .skill, .project {
+            background: #1e2127;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+            flex: 1 1 calc(33% - 40px);
+            min-width: 250px;
+        }
+        .contact {
+            background: #1e2127;
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+        }
+        .contact a {
+            color: #c678dd;
+            text-decoration: none;
+        }
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            background: #181a1f;
+            color: #5c6370;
+        }
+        pre {
+            background: #21252b;
+            color: #e06c75;
+            padding: 15px;
+            border-radius: 5px;
+            overflow-x: auto;
+        }
+        .popup {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: #1e2127;
+            color: #abb2bf;
+            padding: 15px;
+            border-radius: 5px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+            display: none;
+            animation: fadeIn 1s ease-in-out;
+        }
+        .popup p {
+            margin: 0;
+            font-size: 1em;
+            color: #61afef;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        button.popup-trigger {
+            background: #e06c75;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Adithiyaa JP | Arch User & Dev</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div id="home" class="hero">
+        <h1>Hello, I'm Adithiyaa JP</h1>
+        <p>An aspiring software developer and Arch Linux enthusiast with a passion for open-source contributions.</p>
+        <button class="popup-trigger">Show Fun Quote</button>
+    </div>
+    <div id="about" class="section">
+        <h2>About Me</h2>
+        <p>A passionate software developer with expertise in Linux administration, Python programming, and AI-driven technologies. Currently pursuing my degree at Veltech University, I'm committed to creating innovative software solutions.</p>
+        <p>My technical skills span Linux system management, Python development, web technologies, and emerging fields like AI and cybersecurity. I'm driven by a continuous learning mindset and always exploring cutting-edge technologies.</p>
+        <p>When I'm not coding, you'll find me configuring my Arch Linux environment, contributing to open-source projects, or diving deep into the latest technological innovations.</p>
+        <pre>
+[adithiyaa@arch ~]$ uname -a
+Linux arch 6.4.11-arch1-1 #1 SMP PREEMPT_DYNAMIC x86_64 GNU/Linux
+[adithiyaa@arch ~]$ neofetch
+        </pre>
+    </div>
+    <div id="skills" class="section">
+        <h2>My Skills</h2>
+        <div class="skills">
+            <div class="skill">
+                <h3>Arch Linux Mastery</h3>
+                <p>Advanced Arch Linux system management with expertise in configuration, optimization, and automation using bash scripting.</p>
+            </div>
+            <div class="skill">
+                <h3>Python Development</h3>
+                <p>Proficient in Python programming for AI applications, data analysis, automation, and developing robust software solutions.</p>
+            </div>
+            <div class="skill">
+                <h3>Web Development</h3>
+                <p>Skilled in creating responsive and user-friendly web applications using modern front-end and back-end technologies.</p>
+            </div>
+            <div class="skill">
+                <h3>Cybersecurity</h3>
+                <p>Solid understanding of network security principles, ethical hacking techniques, and proactive system protection strategies.</p>
+            </div>
+        </div>
+    </div>
+    <div id="projects" class="section">
+        <h2>My Projects</h2>
+        <div class="projects">
+            <div class="project">
+                <h3>AI-powered Software Testing System</h3>
+                <p><strong>Python | AI | Testing</strong></p>
+                <p>A comprehensive AI-driven software testing system that automates test case generation, execution, and intelligent bug detection using machine learning algorithms.</p>
+                <p><a href="#">GitHub</a> | <a href="#">Live Demo</a></p>
+            </div>
+            <div class="project">
+                <h3>Large-Scale Language Model</h3>
+                <p><strong>Machine Learning | Deep Learning | NLP</strong></p>
+                <p>Developed an advanced language model with 8 billion parameters, demonstrating capabilities in natural language understanding and generation across diverse applications.</p>
+                <p><a href="#">GitHub</a> | <a href="#">Research Paper</a></p>
+            </div>
+        </div>
+    </div>
+    <div id="contact" class="contact">
+        <h2>Get In Touch</h2>
+        <p>Email: <a href="mailto:jpadithiyaaschool@gmail.com">jpadithiyaaschool@gmail.com</a></p>
+        <p>Phone: <a href="tel:+918902432793">+91-8902432793</a></p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/adithiyaa-jp/">Adithiyaa JP</a></p>
+        <p>GitHub: <a href="https://github.com/Harsha-D-Kyousuke">Harsha-D-Kyousuke</a></p>
+        <button style="background:#61afef;color:white;padding:10px 20px;border:none;border-radius:5px;cursor:pointer;">Send Message</button>
+    </div>
+    <footer>
+        © 2025 Adithiyaa JP. All rights reserved.
+    </footer>
+
+    <!-- Popup -->
+    <div class="popup" id="fun-quote-popup">
+        <p>"The best thing about a boolean is even if you are wrong, you are only off by a bit." – Anonymous</p>
+    </div>
+
+    <script>
+        const popup = document.getElementById('fun-quote-popup');
+        const triggerButton = document.querySelector('.popup-trigger');
+
+        triggerButton.addEventListener('click', () => {
+            popup.style.display = 'block';
+            setTimeout(() => {
+                popup.style.display = 'none';
+            }, 5000); // Hide after 5 seconds
+        });
+    </script>
+</body>
+</html>
+```
